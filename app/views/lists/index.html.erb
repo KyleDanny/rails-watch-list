@@ -1,0 +1,37 @@
+
+<div class="cover mb-4 d-flex align-items-center justify-content-center">
+  <div class="text-center text-white">
+    <h1>Save any kind of movies</h1>
+    <h3 class="typed-js"></h3>
+  </div>
+</div>
+
+
+
+<div class="container py-5">
+  <div class="row">
+
+    <div class="col-12 mb-3">
+      <h3> My Lists </h3>
+    </div>
+
+
+      <% @lists.each do |list| %>
+      <div class="col-sm">
+        <div class="card d-block mt-3" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-title"><%=link_to list.name, list %> </p>
+          </div>
+        </div>
+        </div>
+      <% end %>
+
+
+  </div>
+</div>
+
+
+
+
+
+
