@@ -2,32 +2,32 @@
 <div class="cover mb-4 d-flex align-items-center justify-content-center">
   <div class="text-center text-white">
     <h1>Save any kind of movies</h1>
-    <h3 class="typed-js"></h3>
+    <h3><span id="banner-typed-text"></span></h3>
   </div>
 </div>
 
 
 
-<div class="container py-5">
-  <div class="row">
+<div class="container text-center">
 
-    <div class="col-12 mb-3">
+  <div class="row">
+    <div class="col-12 m-2">
       <h3> My Lists </h3>
     </div>
+  </div>
 
-
+  <div class="row">
       <% @lists.each do |list| %>
-      <div class="col-sm">
-        <div class="card d-block mt-3" style="width: 18rem;">
-          <div class="card-body">
-            <p class="card-title"><%=link_to list.name, list %> </p>
+      <div class="col-3 d-flex justify-content-center mb-3" style="height: 200px;">
+        <div class="list-card d-flex align-items-center justify-content-center" style="width: 24rem;">
+          <div class="">
+            <%=link_to list.name, list %>
           </div>
         </div>
-        </div>
+      </div>
       <% end %>
-
-
   </div>
+
 </div>
 
 

@@ -17,4 +17,18 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import 'bootstrap';
+import 'select2/dist/css/select2.min.css'
+import 'jquery-bar-rating/dist/themes/css-stars';
+// import 'aos/dist/aos.css';
+// import AOS from 'aos';
 
+import { initSelect2 } from '../components/init_select2';
+import { loadDynamicBannerText } from '../components/banner';
+// import { initStarRating } from '../components/init_star_rating';
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  initSelect2();
+  loadDynamicBannerText();
+  initStarRating();
+});

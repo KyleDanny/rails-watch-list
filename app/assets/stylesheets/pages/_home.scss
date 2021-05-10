@@ -1,1 +1,20 @@
 // Specific CSS for your home-page
+$black: #000000;
+$brown: #211a11;
+$orange: #e15d3d;
+$yuma: #edd28b;
+
+.list-card {
+  background: $brown;
+  border: 1px solid $yuma;
+  border-radius: 12px;
+  a {
+    color: $yuma;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+.list-card:hover {
+    background: $orange;
+  }

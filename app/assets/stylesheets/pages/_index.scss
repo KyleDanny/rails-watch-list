@@ -1,2 +1,19 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "new";
+@import "show";
+
+
+body {
+  background: $brown;
+  color: $yuma;
+  font-family: Sans-Serif, "Lucida Console", "Courier New", monospace;
+}
+
+h1, h2, h3 {
+  font-family: Verdana, sans-serif, Tahoma;
+}
+
+.border-red {
+  border: 5px solid red;
+}
