@@ -67,7 +67,7 @@
 
       <div class="col">
         <div class="card-new rounded p-3">
-          <h5> Create a bookmark </h5>
+          <h5> Add a film </h5>
           <%= simple_form_for [@list, @bookmark] do |f| %>
             <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
             <%= f.association :movie, prompt: 'Select a movie', input_html: { class: 'select2' } %>
