@@ -24,11 +24,13 @@ import 'jquery-bar-rating/dist/themes/css-stars';
 
 import { initSelect2 } from '../components/init_select2';
 import { loadDynamicBannerText } from '../components/banner';
-// import { initStarRating } from '../components/init_star_rating';
+import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { initStarRating } from '../components/init_star_rating';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   initSelect2();
   loadDynamicBannerText();
   initStarRating();
+  initUpdateNavbarOnScroll();
 });
