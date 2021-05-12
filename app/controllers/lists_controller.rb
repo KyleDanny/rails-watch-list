@@ -6,7 +6,6 @@ class ListsController < ApplicationController
   end
 
   def show
-    # set_list called on line #2
     @bookmark = Bookmark.new
     @review = Review.new(list: @list)
   end
@@ -25,7 +24,6 @@ class ListsController < ApplicationController
   end
 
   def destroy
-    # set_list called on line #2
     @list.destroy
     redirect_to lists_path
   end
