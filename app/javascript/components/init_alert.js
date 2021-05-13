@@ -1,12 +1,12 @@
-import Swal from 'sweetalert2'
+import swal from 'sweetalert';
 
-const AddSweetAlertToElement = (elememt) => {
-  element.addEventListener('click', () => {
-    Swal.fire(
-      'Good job!',
-      'Thank you for your review!',
-      'success')
-  })
-}
+const initSweetalert = (selector, options = {}, callback = () => {}) => {
+  const swalButton = document.querySelector(selector);
+  if (swalButton) { // protect other pages
+    swalButton.addEventListener('click', () => {
+      swal(options).then(callback); // <-- add the `.then(callback)`
+    });
+  }
+};
 
-export { AddSweetAlertToElement };
+export { initSweetalert };
