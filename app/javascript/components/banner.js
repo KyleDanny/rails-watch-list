@@ -1,9 +1,9 @@
 import Typed from 'typed.js';
 
 const loadDynamicBannerText = () => {
-  new Typed('#typed-text', {
+  new Typed('#banner-typed-text', {
     strings: ["Create your unique database"],
-    typeSpeed: 75,
+    typeSpeed: 50,
     loop: true
   });
 }
