@@ -29,9 +29,14 @@ document.addEventListener('turbolinks:load', () => {
   loadDynamicBannerText();
 });
 
+
+
 initSweetalert('#test-button', {
   title: "Review Accepted",
   text: "Thank you for the review",
   icon: "success",
   timer: 10000
 });
+
+
+
